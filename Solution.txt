@@ -1,0 +1,41 @@
+
+Prehistory: I am a new student, that went from Intellingent Data Processing System 
+to study Multimedia. Mrs. Karpowicz gave me extra time to complete all tasks I 
+missed until 11/11/2020.
+
+1. Click on the fork button (which is situated on the right top corner) and 
+fork yourself to epg1_git.
+
+2. You can do it in easy and hard ways: sometimes I create a special folder 
+(usually calling GIT), open Powershell and write this command: 
+
+PC C:\path> git clone <repository/fork_URL>
+
+But this time i was a bit lazy, so I just opened Github on my Desktop, found my 
+fork and cloned it to an appropriate folder.
+
+3. After point 2 is done write:
+
+PC C:\path> git checkout -b s18933 (in my case)
+
+4. After point 3 is done write:
+
+PC C:\path> git checkout s18933
+PC C:\path> git fetch origin
+PC C:\path> git rebase origin/rebase-me
+
+These commands will also complete point 5.
+
+5. I used this command in order to do fast forward:
+
+PC C:\path> git merge --ff-only origin/rebase-me
+
+But as I found out, commands in point 4 have already done all work.
+
+6. After point 5 write:
+
+PC C:\path> git megre origin/merge-me
+
+However, I got the message about 1 conflicted file, so I went to Github on Desktop,
+opened file in Visual Studio, removed all "<<<<<<>>>>>>" and "============" and 
+finally pushed the button to complete the merging.
