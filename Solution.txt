@@ -20,9 +20,9 @@ PC C:\path> git checkout -b s18933 (in my case)
 
 4. After point 3 is done write:
 
-PC C:\path> git checkout s18933
-PC C:\path> git fetch origin
-PC C:\path> git rebase origin/rebase-me
+PC C:\path> git checkout rebase-me
+PC C:\path> git fetch 
+PC C:\path> git rebase origin/s18933
 
 These commands will also complete point 5.
 
