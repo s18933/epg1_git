@@ -1,0 +1,10 @@
+git clone https://github.com/s18933/epg1_git.git
+git checkout -b hw-s18933
+git checkout rebase-me
+git rebase --onto hw-s18933
+git checkout hw-s18933
+git branch -a
+git merge --ff-only master(done automatically by using rebase)
+git merge origin/merge-me
+git commit -m "Initial commit"
+touch solutions.txt
